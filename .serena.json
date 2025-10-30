@@ -1,0 +1,14 @@
+{
+  "name": "paper-thickness-calculator",
+  "description": "Paper thickness calculator PWA",
+  "language": "javascript",
+  "framework": "vanilla",
+  "entry_points": [
+    "index.html",
+    "script.js"
+  ],
+  "exclude": [
+    ".git",
+    "node_modules"
+  ]
+}
