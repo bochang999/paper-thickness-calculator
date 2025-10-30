@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="紙の枚数から厚みを予測するシンプルなWebアプリ">
+    <meta name="theme-color" content="#007bff">
+    <title>紙の厚み予測</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <h1>紙の厚み予測</h1>
+
+    <div class="card">
+      <h2>厚みの予測</h2>
+
+      <label for="predict-sheets">予測したい枚数</label>
+      <input type="number" id="predict-sheets" placeholder="枚数を入力...">
+
+      <h3>予測される厚み</h3>
+      <div id="predicted-thickness" class="result-display">0.00 mm</div>
+    </div>
+
+    <details id="settings-details">
+      <summary id="settings-summary">
+        ▼ 基準設定を変更する (現在の基準: --- mm/枚)
+      </summary>
+
+      <div class="card-inner">
+        <label for="sample-thickness">サンプルの厚み (mm)</label>
+        <input type="number" id="sample-thickness" step="0.01">
+
+        <label for="sample-sheets">サンプルの枚数</label>
+        <input type="number" id="sample-sheets">
+
+        <button id="set-baseline">基準をセット</button>
+      </div>
+    </details>
+
+    <script src="script.js"></script>
+</body>
+</html>
